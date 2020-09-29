@@ -6,7 +6,8 @@ namespace Sandbox
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Customer niklas = new Customer();
+            niklas._name = "1";
         }
     }
 }
