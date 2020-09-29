@@ -6,9 +6,7 @@ namespace Sandbox
 {
     class Customer
     {
-        //En klass med namn och produktval.
         public String _name;
         public int _productId;
-
     }
 }

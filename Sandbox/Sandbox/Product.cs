@@ -6,7 +6,6 @@ namespace Sandbox
 {
     class Product
     {
-        //En klass med id.
         int _productId;
     }
 }
