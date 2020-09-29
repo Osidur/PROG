@@ -6,12 +6,21 @@ namespace Sandbox
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Add customer: 1");
-            Console.WriteLine("Add product: 2");
-            Console.WriteLine("Exit program: 3");
-            int user_choice = Convert.ToInt32(Console.ReadLine());
-
-            switch (user_choice)
+            while(true)
+            {
+                Start();
+                Choices();
+            }
+        }
+    void Start() 
+    {
+        Console.WriteLine("Add customer: 1");
+        Console.WriteLine("Add product: 2");
+        Console.WriteLine("Exit program: 3");
+        int user_choice = Convert.ToInt32(Console.ReadLine());
+        }
+    void Choices() {
+        switch (user_choice)
             {
                 case 1:
                     Console.WriteLine("Name:");
@@ -28,8 +37,7 @@ namespace Sandbox
                 case 3:
                     Application.Exit;
                     break;
-
-            }
         }
     }
 }
+    }

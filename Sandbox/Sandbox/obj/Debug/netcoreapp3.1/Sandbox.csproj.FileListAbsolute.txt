@@ -1,0 +1,4 @@
+C:\Users\hugo.pollack\Documents\GitHub\PROG\Sandbox\Sandbox\obj\Debug\netcoreapp3.1\Sandbox.csprojAssemblyReference.cache
+C:\Users\hugo.pollack\Documents\GitHub\PROG\Sandbox\Sandbox\obj\Debug\netcoreapp3.1\Sandbox.AssemblyInfoInputs.cache
+C:\Users\hugo.pollack\Documents\GitHub\PROG\Sandbox\Sandbox\obj\Debug\netcoreapp3.1\Sandbox.AssemblyInfo.cs
+C:\Users\hugo.pollack\Documents\GitHub\PROG\Sandbox\Sandbox\obj\Debug\netcoreapp3.1\Sandbox.csproj.CoreCompileInputs.cache
