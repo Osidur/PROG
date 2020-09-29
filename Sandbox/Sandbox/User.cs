@@ -5,12 +5,9 @@ using System.Text;
 
 namespace Sandbox
 {
-    class Customer
+    class User()
     {
-        Customer()
-        {
-            public String _name;
-            public int _productId;
-        }
+        public String _name;
+        public int _productId;
     }
 }

@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sandbox
 {
-    class Product
+    class Product()
     {
         int _productId;
     }

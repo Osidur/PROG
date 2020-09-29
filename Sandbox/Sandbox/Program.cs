@@ -18,11 +18,15 @@ namespace Sandbox
                     String name = Console.ReadLine();
                     Console.WriteLine("Product id:");
                     String productId = Console.ReadLine();
-                    Customer user = new Customer(name, productId);
+                    User customer = new User(name, productId);
                     break;
                 case 2:
+                    Console.WriteLine("Id:");
+                    String id = Console.ReadLine();
+                    User customer = new User(id);
                     break;
                 case 3:
+                    Application.Exit;
                     break;
 
             }
