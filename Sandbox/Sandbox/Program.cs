@@ -1,8 +1,17 @@
-﻿using System;
+﻿using Sandbox;
+using System;
 
-public class Class1
+public class Program
 {
-	public Class1()
+	public Main(string args)
 	{
+		/* 
+		*En huvudklass som kör programmet.
+		*En klass som representerar en Kund.
+		*En klass som representerar en Produkt.
+		*/
+
+		createUser();
+
 	}
 }
