@@ -7,31 +7,30 @@ namespace uppgift1
     {
         static void Main(string[] args)
         {
-            Console.WriteLine();
+            Console.WriteLine("1 för ny kund");
             int user_input = Convert.ToInt32(Console.ReadLine());
             switch(user_input)
             {
                 case 1:
                     Customer customer = new Customer();
-                    Console.WriteLine("vad heter du");
-                    customer.name = Console.ReadLine();
+                    Console.WriteLine("ny kund skapad");
 
-                    Console.WriteLine("");
+                    Console.WriteLine("1 för att lägga till produkt till kunden");
                     int user_input2 = Convert.ToInt32(Console.ReadLine());
                     switch (user_input2)
                     {
                         case 1:
                             Product product = new Product();
-                            product.name = "car";
                             customer.products.Add(product);
+                            Console.WriteLine("produkt tillagd");
                             break;
                         default:
-                            Console.WriteLine("tokohej");
+                            Console.WriteLine("program avslutas");
                             break;
             }
                     break;
                 default:
-                    Console.WriteLine("tokohej");
+                    Console.WriteLine("program avslutas");
                     break;
             }
         }

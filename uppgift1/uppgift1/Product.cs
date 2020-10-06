@@ -7,6 +7,5 @@ namespace uppgift1
 {
     class Product
     {
-        public string name;
     }
 }
