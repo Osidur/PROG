@@ -2,11 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\Sandbox",
-    "\\Sandbox\\Sandbox",
-    "\\Sandbox\\Sandbox\\obj",
-    "\\Sandbox\\Sandbox\\obj\\Release",
-    "\\Sandbox\\Sandbox\\obj\\Release\\netcoreapp3.1"
+    "\\Sandbox\\Sandbox"
   ],
-  "SelectedNode": "\\Sandbox\\Sandbox\\obj",
+  "SelectedNode": "\\Sandbox\\Sandbox.sln",
   "PreviewInSolutionExplorer": false
 }
