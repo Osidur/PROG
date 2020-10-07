@@ -11,7 +11,8 @@ namespace uppgift1
             while (true)
             {
                 Console.WriteLine("1 för ny kund");
-                Console.WriteLine("2 för att avsluta");
+                Console.WriteLine("2 för att skriva ut ordrar");
+                Console.WriteLine("3 för att avsluta");
                 try
                 {
                     int user_input = Convert.ToInt32(Console.ReadLine());
@@ -34,7 +35,8 @@ namespace uppgift1
                                         Console.WriteLine("produkt tillagd");
                                         break;
                                     case 2:
-                                        Console.WriteLine("Application.Exit(funkarej)");
+                                        Console.WriteLine("bybye bby!");
+                                        Environment.Exit(0);
                                         break;
                                     default:
                                         break;
@@ -47,7 +49,11 @@ namespace uppgift1
                             }
                             break;
                         case 2:
-                            Console.WriteLine("Application.Exit(funkarej)");
+                            Console.WriteLine("ordrar");
+                            break;
+                        case 3:
+                            Console.WriteLine("bybye bby!");
+                            Environment.Exit(0);
                             break;
                         default:
                             break;
