@@ -11,3 +11,16 @@ C:\Users\hugo.pollack\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcorea
 C:\Users\hugo.pollack\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.dll
 C:\Users\hugo.pollack\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.pdb
 C:\Users\hugo.pollack\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.genruntimeconfig.cache
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\bin\Debug\netcoreapp3.1\uppgift1.exe
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\bin\Debug\netcoreapp3.1\uppgift1.deps.json
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\bin\Debug\netcoreapp3.1\uppgift1.runtimeconfig.json
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\bin\Debug\netcoreapp3.1\uppgift1.runtimeconfig.dev.json
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\bin\Debug\netcoreapp3.1\uppgift1.dll
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\bin\Debug\netcoreapp3.1\uppgift1.pdb
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.csprojAssemblyReference.cache
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.AssemblyInfoInputs.cache
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.AssemblyInfo.cs
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.csproj.CoreCompileInputs.cache
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.dll
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.pdb
+C:\Users\hugop\OneDrive\Documents\GitHub\PROG\uppgift1\uppgift1\obj\Debug\netcoreapp3.1\uppgift1.genruntimeconfig.cache

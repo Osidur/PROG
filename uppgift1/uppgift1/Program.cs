@@ -64,6 +64,6 @@ namespace uppgift1
                     Console.WriteLine("fel typ av input");
                 }
             }
-        } 
+        }
     }
 }
