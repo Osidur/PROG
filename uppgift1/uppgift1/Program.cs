@@ -21,7 +21,6 @@ namespace uppgift1
                         case 1:
                             Customer customer = new Customer();
                             Console.WriteLine("ny kund skapad");
-
                             Console.WriteLine("1 för att lägga till produkt till kunden");
                             Console.WriteLine("2 för att avsluta");
                             try
