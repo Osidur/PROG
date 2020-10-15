@@ -1,0 +1,8 @@
+{
+  "runtimeOptions": {
+    "additionalProbingPaths": [
+      "C:\\Users\\hugop\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\hugop\\.nuget\\packages"
+    ]
+  }
+}
