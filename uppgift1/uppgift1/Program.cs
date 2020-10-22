@@ -19,8 +19,8 @@ namespace uppgift1
                 Console.WriteLine("4 för att avsluta");
                 try
                 {
-                    int user_input2 = Convert.ToInt32(Console.ReadLine());
-                    switch (user_input2)
+                    int user_input = Convert.ToInt32(Console.ReadLine());
+                    switch (user_input)
                     {
                         case 1:
                             Car car = new Car();
