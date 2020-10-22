@@ -4,8 +4,7 @@ using System.Text;
 
 namespace uppgift1
 {
-    class disk : Product
+    class Disk : Product
     {
-        public string _song;
     }
 }

@@ -4,8 +4,7 @@ using System.Text;
 
 namespace uppgift1
 {
-    class car : Product
+    class Car : Product
     {
-        public string _color;
     }
 }

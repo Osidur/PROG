@@ -23,12 +23,12 @@ namespace uppgift1
                     switch (user_input2)
                     {
                         case 1:
-                            car car = new car();
+                            Car car = new Car();
                             customer._products.Add(car);
                             Console.WriteLine("bil tillagd");
                             break;
                         case 2:
-                            disk disk = new disk();
+                            Disk disk = new Disk();
                             customer._products.Add(disk);
                             Console.WriteLine("disk tillagd");
                             break;
