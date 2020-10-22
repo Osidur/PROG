@@ -24,11 +24,13 @@ namespace uppgift1
                     {
                         case 1:
                             Car car = new Car();
+                            car._productId = "Fast car";
                             customer._products.Add(car);
                             Console.WriteLine("bil tillagd");
                             break;
                         case 2:
                             Disk disk = new Disk();
+                            disk._productId = "Good song";
                             customer._products.Add(disk);
                             Console.WriteLine("disk tillagd");
                             break;

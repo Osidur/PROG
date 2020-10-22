@@ -7,6 +7,6 @@ namespace uppgift1
 {
     class Product
     {
-        public int _id;
+        public string _productId;
     }
 }
