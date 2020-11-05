@@ -27,7 +27,31 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            My_Text.Text = "Bird calls in the chat!";
+            if (sender is Button banana) {
+
+                switch (banana.Content) {
+                    case "3":
+                    case "54":
+                    case "632":
+                    case "7183":
+                    case "334":
+                    case "6":
+                    case "+":
+                        My_Text.Text += banana.Content;
+                        break;
+                    case "?":
+                        string[] num_to_be_sum = My_Text.Text.Split('+');
+                        int[] num_to_be_sum_int = Array.ConvertAll(num_to_be_sum, int.Parse);
+                        int sum = num_to_be_sum_int.Sum();
+                        string a = sum.ToString();
+                        My_Text2.Text = a;
+                        break;
+                    case "Clear":
+                        My_Text.Text = "";
+                        My_Text2.Text = "";
+                        break;
+                }
+            }
         }
     }
 }
