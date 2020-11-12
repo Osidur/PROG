@@ -28,9 +28,9 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button banana) {
+            if (e.Source is Button x) {
 
-                switch (banana.Content) {
+                switch (x.Content) {
                     case "1":
                     case "2":
                     case "3":
@@ -45,8 +45,15 @@ namespace WpfApp1
                     case "+":
                     case "/":
                     case "*":
+                        Input.Text += x.Content;
+                        break;
                     case "=":
-
+                        //Need to save the split operators
+                        var Split_Input = Input.Text.Split('-', '+', '/', '*');
+                        foreach (var i in Split_Input)
+                        {
+                            Output.Text += i;
+                        }
                         break;
                     case "Clear":
                         break;
