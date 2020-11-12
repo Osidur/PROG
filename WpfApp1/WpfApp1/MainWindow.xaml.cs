@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -34,7 +35,9 @@ namespace WpfApp1
                     case "54":
                     case "632":
                     case "7183":
-                    case "334":
+                    case "countdown":
+
+                        break;
                     case "6":
                     case "+":
                         My_Text.Text += banana.Content;
@@ -44,11 +47,11 @@ namespace WpfApp1
                         int[] num_to_be_sum_int = Array.ConvertAll(num_to_be_sum, int.Parse);
                         int sum = num_to_be_sum_int.Sum();
                         string a = sum.ToString();
-                        My_Text2.Text = a;
+                        Output.Text = a;
                         break;
                     case "Clear":
                         My_Text.Text = "";
-                        My_Text2.Text = "";
+                        Output.Text = "";
                         break;
                 }
             }
