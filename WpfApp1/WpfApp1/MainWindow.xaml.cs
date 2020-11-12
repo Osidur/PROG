@@ -31,27 +31,24 @@ namespace WpfApp1
             if (sender is Button banana) {
 
                 switch (banana.Content) {
+                    case "1":
+                    case "2":
                     case "3":
-                    case "54":
-                    case "632":
-                    case "7183":
-                    case "countdown":
+                    case "4":
+                    case "5":
+                    case "6":
+                    case "7":
+                    case "8":
+                    case "9":
+                    case "0":
+                    case "-":
+                    case "+":
+                    case "/":
+                    case "*":
+                    case "=":
 
                         break;
-                    case "6":
-                    case "+":
-                        My_Text.Text += banana.Content;
-                        break;
-                    case "?":
-                        string[] num_to_be_sum = My_Text.Text.Split('+');
-                        int[] num_to_be_sum_int = Array.ConvertAll(num_to_be_sum, int.Parse);
-                        int sum = num_to_be_sum_int.Sum();
-                        string a = sum.ToString();
-                        Output.Text = a;
-                        break;
                     case "Clear":
-                        My_Text.Text = "";
-                        Output.Text = "";
                         break;
                 }
             }

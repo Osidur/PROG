@@ -38,5 +38,6 @@
         <Button Content="/" FontSize="25px" Grid.Column="0" Grid.Row="4" HorizontalAlignment="Center" Width="300" Height="100" VerticalAlignment="Center" Click="Button_Click"/>
         <Button Content="*" FontSize="25px" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" Width="300" Height="100" VerticalAlignment="Center" Click="Button_Click"/>
         <Button Content="=" FontSize="25px" Grid.Column="2" Grid.Row="4" HorizontalAlignment="Center" Width="300" Height="100" VerticalAlignment="Center" Click="Button_Click"/>
+        <Button Content="Clear" FontSize="25px" Grid.Column="4" Grid.Row="4" HorizontalAlignment="Center" Width="300" Height="100" VerticalAlignment="Center" Click="Button_Click"/>
     </Grid>
 </Window>
