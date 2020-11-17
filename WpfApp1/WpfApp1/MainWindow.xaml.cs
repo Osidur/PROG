@@ -50,9 +50,22 @@ namespace WpfApp1
                     case "=":
                         //Need to save the split operators
                         var Split_Input = Input.Text.Split('-', '+', '/', '*');
-                        foreach (var i in Split_Input)
+                        //Kod från StackOverflow frågan: "Convert string[] to int[] in one line of code using LINQ"
+                        int[] Split_InputInt = Array.ConvertAll(Split_Input, int.Parse);
+                        var Split_Operators = Input.Text.Split('1', '2', '3', '4', '5', '6', '7', '8', '9', '0');
+                        int output = 0;
+                        foreach (var i in Split_InputInt)
                         {
-                            Output.Text += i;
+                            output += i;
+                            foreach (var y in Split_Operators)
+                            {
+                                switch (y)
+                                {
+                                    case "-":
+                                        output = output - 
+                                        break;
+                                }
+                            }
                         }
                         break;
                     case "Clear":
