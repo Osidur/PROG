@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
@@ -27,28 +28,34 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (sender is Button banana) {
+            if (e.Source is Button x) {
 
-                switch (banana.Content) {
+                switch (x.Content) {
+                    case "1":
+                    case "2":
                     case "3":
-                    case "54":
-                    case "632":
-                    case "7183":
-                    case "334":
+                    case "4":
+                    case "5":
                     case "6":
+                    case "7":
+                    case "8":
+                    case "9":
+                    case "0":
+                    case "-":
                     case "+":
-                        My_Text.Text += banana.Content;
+                    case "/":
+                    case "*":
+                        Input.Text += x.Content;
                         break;
-                    case "?":
-                        string[] num_to_be_sum = My_Text.Text.Split('+');
-                        int[] num_to_be_sum_int = Array.ConvertAll(num_to_be_sum, int.Parse);
-                        int sum = num_to_be_sum_int.Sum();
-                        string a = sum.ToString();
-                        My_Text2.Text = a;
+                    case "=":
+                        //Need to save the split operators
+                        var Split_Input = Input.Text.Split('-', '+', '/', '*');
+                        foreach (var i in Split_Input)
+                        {
+                            Output.Text += i;
+                        }
                         break;
                     case "Clear":
-                        My_Text.Text = "";
-                        My_Text2.Text = "";
                         break;
                 }
             }
