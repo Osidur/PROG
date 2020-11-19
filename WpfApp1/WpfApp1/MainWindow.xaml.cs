@@ -28,9 +28,11 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            if (e.Source is Button x) {
+            if (e.Source is Button x)
+            {
 
-                switch (x.Content) {
+                switch (x.Content)
+                {
                     case "1":
                     case "2":
                     case "3":
@@ -48,14 +50,35 @@ namespace WpfApp1
                         Input.Text += x.Content;
                         break;
                     case "=":
-                        //Need to save the split operators
                         var Split_Input = Input.Text.Split('-', '+', '/', '*');
-                        foreach (var i in Split_Input)
+                        //Kod från StackOverflow frågan: "Convert string[] to int[] in one line of code using LINQ"
+                        int[] Split_InputInt = Array.ConvertAll(Split_Input, int.Parse);
+                        var Split_Operators = Input.Text.Split('1', '2', '3', '4', '5', '6', '7', '8', '9', '0');
+                        double output = 0;
+                        foreach (var y in Split_Operators)
                         {
-                            Output.Text += i;
+                            switch (y)
+                            {
+                                case "-":
+                                    output = Split_InputInt[0] - Split_InputInt[1];
+                                    break;
+                                case "+":
+                                    output += Split_InputInt[0] + Split_InputInt[1];
+                                    break;
+                                case "/":
+                                    output += Split_InputInt[0] / Split_InputInt[1];
+                                    break;
+                                case "*":
+                                    output += Split_InputInt[0] * Split_InputInt[1];
+                                    break;
+                            }
                         }
+                        string outputstring = output.ToString();
+                        Output.Text = outputstring;
                         break;
                     case "Clear":
+                        Input.Text = "";
+                        Output.Text = "";
                         break;
                 }
             }
