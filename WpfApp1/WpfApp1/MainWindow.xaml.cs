@@ -47,41 +47,59 @@ namespace WpfApp1
                     case "+":
                     case "/":
                     case "*":
+                    case "^":
+                    //case "√":
                         Input.Text += x.Content;
-                        break;
-                    case "=":
-                        var Split_Input = Input.Text.Split('-', '+', '/', '*');
-                        //Kod från StackOverflow frågan: "Convert string[] to int[] in one line of code using LINQ"
-                        int[] Split_InputInt = Array.ConvertAll(Split_Input, int.Parse);
-                        var Split_Operators = Input.Text.Split('1', '2', '3', '4', '5', '6', '7', '8', '9', '0');
-                        double output = 0;
-                        foreach (var y in Split_Operators)
-                        {
-                            switch (y)
-                            {
-                                case "-":
-                                    output = Split_InputInt[0] - Split_InputInt[1];
-                                    break;
-                                case "+":
-                                    output += Split_InputInt[0] + Split_InputInt[1];
-                                    break;
-                                case "/":
-                                    output += Split_InputInt[0] / Split_InputInt[1];
-                                    break;
-                                case "*":
-                                    output += Split_InputInt[0] * Split_InputInt[1];
-                                    break;
-                            }
-                        }
-                        string outputstring = output.ToString();
-                        Output.Text = outputstring;
-                        break;
-                    case "Clear":
-                        Input.Text = "";
-                        Output.Text = "";
                         break;
                 }
             }
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            var Split_Input = Input.Text.Split('-', '+', '/', '*', '^', '√');
+            //Kod från StackOverflow frågan: "Convert string[] to int[] in one line of code using LINQ"
+            int[] Split_InputInt = Array.ConvertAll(Split_Input, int.Parse);
+            var Split_Operators = Input.Text.Split('1', '2', '3', '4', '5', '6', '7', '8', '9', '0');
+            double output = 0;
+            foreach (var y in Split_Operators)
+            {
+                switch (y)
+                {
+                    case "-":
+                        output = Split_InputInt[0] - Split_InputInt[1];
+                        break;
+                    case "+":
+                        output += Split_InputInt[0] + Split_InputInt[1];
+                        break;
+                    case "/":
+                        output += Split_InputInt[0] / Split_InputInt[1];
+                        break;
+                    case "*":
+                        output += Split_InputInt[0] * Split_InputInt[1];
+                        break;
+                    case "^":
+                        output += Math.Pow(Split_InputInt[0], Split_InputInt[1]);
+                        break;
+                    /*
+                    case "√":
+                        output += Math.Sqrt(Split_InputInt[0]);
+                        break;
+                    */
+                }
+            }
+            string outputstring = output.ToString();
+            Output.Text = outputstring;
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Input.Text = "";
+            Output.Text = "";
+        }
+
+        private void Rotate(object sender, RoutedEventArgs e)
+        {
         }
     }
 }
