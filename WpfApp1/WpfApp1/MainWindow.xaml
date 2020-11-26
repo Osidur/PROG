@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:WpfApp1"
         mc:Ignorable="d"
-        Title="MainWindow" Height="800" Width="1000">
+        Title="MainWindow" Height="800" Width="800">
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition/>
@@ -23,7 +23,7 @@
             <RowDefinition/>
         </Grid.RowDefinitions>
         <TextBlock Name="Input" Grid.Column="3" Grid.Row="0" Text="" FontSize="80" FontFamily="monospace" HorizontalAlignment="Center" VerticalAlignment="Center" Panel.ZIndex="1"/>
-        <TextBlock Name="Output" Grid.Column="3" Grid.Row="2" Text="" FontSize="80" FontFamily="monospace" HorizontalAlignment="Center" VerticalAlignment="Center" Panel.ZIndex="1"/>
+        <TextBlock Name="Output" Grid.Column="3" Grid.Row="3" Text="" FontSize="80" FontFamily="monospace" HorizontalAlignment="Center" VerticalAlignment="Center" Panel.ZIndex="1"/>
         <Button Content="1" FontSize="25px" Grid.Column="0" Grid.Row="0" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Button_Click"/>
         <Button Content="2" FontSize="25px" Grid.Column="1" Grid.Row="0" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Button_Click"/>
         <Button Content="3" FontSize="25px" Grid.Column="2" Grid.Row="0" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Button_Click"/>
@@ -41,7 +41,7 @@
         <Button Content="^" FontSize="25px" Grid.Column="0" Grid.Row="5" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Button_Click"/>
         <Button Content="√" FontSize="25px" Grid.Column="1" Grid.Row="4" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Button_Click"/>
         <Button Content="=" FontSize="25px" Grid.Column="2" Grid.Row="5" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Button_Click_1"/>
-        <Button Content="Clear" FontSize="25px" Grid.Column="4" Grid.Row="4" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Button_Click_2"/>
-        <Button Content="Rotato" FontSize="25px" Grid.Column="3" Grid.Row="4" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Rotate"/>
+        <Button Content="Clear" FontSize="25px" Grid.Column="4" Grid.Row="5" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Button_Click_2"/>
+        <Button Content="Rotato" FontSize="25px" Grid.Column="3" Grid.Row="5" HorizontalAlignment="Center" Width="100" Height="100" VerticalAlignment="Center" Click="Rotate"/>
     </Grid>
 </Window>

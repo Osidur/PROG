@@ -58,8 +58,11 @@ namespace WpfApp1
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
             var Split_Input = Input.Text.Split('-', '+', '/', '*', '^', '√');
-            //Kod från StackOverflow frågan: "Convert string[] to int[] in one line of code using LINQ"
+
+            //Koden under är från StackOverflow frågan: "Convert string[] to int[] in one line of code using LINQ"
             int[] Split_InputInt = Array.ConvertAll(Split_Input, int.Parse);
+            //
+
             var Split_Operators = Input.Text.Split('1', '2', '3', '4', '5', '6', '7', '8', '9', '0');
             double output = 0;
             foreach (var y in Split_Operators)
